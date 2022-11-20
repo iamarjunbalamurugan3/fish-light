@@ -1,10 +1,12 @@
-input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    strip.clear()
-})
 input.onButtonPressed(Button.A, function () {
     strip.clear()
     strip.show()
     strip.showColor(neopixel.colors(NeoPixelColors.White))
+})
+input.onPinPressed(TouchPin.P2, function () {
+    strip.clear()
+    strip.show()
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
 })
 input.onButtonPressed(Button.AB, function () {
     strip.clear()
