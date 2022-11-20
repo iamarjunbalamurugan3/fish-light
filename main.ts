@@ -1,3 +1,6 @@
+input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
+    strip.clear()
+})
 input.onButtonPressed(Button.A, function () {
     strip.clear()
     strip.show()
