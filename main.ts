@@ -3,15 +3,10 @@ input.onButtonPressed(Button.A, function () {
     strip.show()
     strip.showColor(neopixel.colors(NeoPixelColors.White))
 })
-input.onPinPressed(TouchPin.P2, function () {
-    strip.clear()
-    strip.show()
-    strip.showColor(neopixel.colors(NeoPixelColors.Black))
-})
 input.onButtonPressed(Button.AB, function () {
     strip.clear()
     strip.show()
-    strip.showColor(neopixel.colors(NeoPixelColors.Orange))
+    strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 })
 input.onButtonPressed(Button.B, function () {
     strip.clear()
@@ -21,7 +16,7 @@ input.onButtonPressed(Button.B, function () {
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     strip.clear()
     strip.show()
-    strip.showRainbow(1, 360)
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
 })
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P0, 13, NeoPixelMode.RGB)
